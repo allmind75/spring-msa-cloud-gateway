@@ -10,15 +10,10 @@ spring:
     config:
       uri: http://localhost:8500
 
----
-spring:
-  profiles: local
+application:
+  project:
+    name: gateway-service
 
-
----
-spring:
-  profiles: dev
-
----
-spring:
-  profiles: prod
+logging:
+  path:
+    root: ./logs
